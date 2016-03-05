@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_traveller">traveller</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+
+    <string-array name="genderlist">
+        <item>Select Gender</item>
+
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="proffesionlist">
+        <item>Select Proffesion</item>
+
+        <item>Doctor</item>
+        <item>Engineer</item>
+        <item>Farmer</item>
+        <item>Banker</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="operations">
+        <item>Rescue-Team</item>
+        <item>Near Hospitals</item>
+        <item>Near Police-Stations</item>
+
+
+    </string-array>
+
+    <string-array name="peoplearray">
+        <item>Select Number of People Trapped</item>
+        <item>1-5</item>
+        <item>5-10</item>
+        <item>10-20</item>
+        <item>20-50</item>
+        <item>50-100</item>
+        <item>More than 100</item>
+
+
+    </string-array>
+
+    <string-array name="conditionarray">
+        <item>Select Road Conditions</item>
+        <item>Better</item>
+        <item>Bad</item>
+        <item>Very Bad</item>
+        <item>Worst</item>
+
+    </string-array>
+
+    <string name="title_activity_mode">Mode</string>
+    <string name="title_activity_normalmode">Normalmode</string>
+    <string name="title_activity_places">Map</string>
+    <string name="title_activity_victim">Victim</string>
+
+</resources>

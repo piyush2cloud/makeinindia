@@ -1,0 +1,477 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/material_blue_grey_800">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".PlacePickerActivity">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            tools:layout="@layout/abc_action_bar_title_item" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <Spinner
+                android:id="@+id/spinnerpeople"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:entries="@array/peoplearray">
+
+            </Spinner>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <Spinner
+                android:id="@+id/spinnercondition"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:entries="@array/conditionarray">
+
+            </Spinner>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoText="false"
+                android:hint="Approx. Height of Water From Ground (in mtrs)"
+                android:password="false"
+                android:textColor="#fff3fff3"
+                android:textColorHint="#fff"
+                android:inputType="number"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/radiusedit"
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:hint="Approx Radius of Water Near"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#fff"
+                android:layout_marginRight="10dp"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/radiusbutton"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="#ff69efff"
+                android:text="Water Radius"
+                android:layout_marginRight="4dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/foodbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Food Requirements"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/medicinebutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Medicine Requirements" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/clothesbutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Clothes Requirements" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/injurybutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Injury Happened" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/photobutton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo" />
+
+            <ImageView
+                android:id="@+id/photoview"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/record1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="RECORD" />
+
+            <Button
+                android:id="@+id/record2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="PLAY"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/record3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:text="STOP" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Weather Conditions"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/temps"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Temperature"
+                android:textIsSelectable="false"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/temperature"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Humidity1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Humidity"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/Humidity"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/desc1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Description"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sunrise1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Sunrise"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/sunrise"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pressure1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Pressure"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/pressure"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/winds"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Wind-Speed"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/windspeed"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Latitude1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Latitude"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/latitude"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/long1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Longitude"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/longitude"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Rain1"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Rainfall"
+                android:textSize="20dp"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/rain"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Submit"
+            android:id="@+id/submitrescue"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

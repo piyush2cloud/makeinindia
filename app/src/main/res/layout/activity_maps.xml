@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    tools:context=".MapsActivity"
+    tools:layout="@layout/abc_action_bar_title_item" />
+
+
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/material_blue_grey_800">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Activate Service"
+                android:background="#ff3d4c"
+                android:shadowColor="#ff2b2c"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/servicebutton"/>
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="sos"
+                android:background="#ff3d4c"
+                android:shadowColor="#ff2b2c"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/sosbutton"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editlat"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="20dp"
+                    android:password="false"
+                    android:textColor="#fff3fff3" />
+
+                <EditText
+                    android:id="@+id/editlong"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="35dp"
+                    android:password="false"
+                    android:textColor="#fff3fff3" />
+
+            </LinearLayout>-->
+
+        <!--    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/radiusedit"
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Flood Radius"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#fff"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:id="@+id/radiusbutton"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:background="#ff69efff"
+                    android:text="Water Radius"
+                    android:layout_marginRight="4dp" />
+
+
+            </LinearLayout>-->
+
+
+
+
+          <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/videobutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff69efff"
+                    android:text="Upload Video" />
+
+                <VideoView
+                    android:id="@+id/runningview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp" />
+
+            </LinearLayout>-->
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Emergeny Message:"
+                    android:textColorHint="#fff"
+                    android:textColor="#fff"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/emergenymsg"/>
+            </LinearLayout>
+
+
+           <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:gravity="center"
+                    android:hint="Approx. Height of Water From Ground (in mtrs)"
+                    android:password="false"
+                    android:textColor="#fff3fff3"
+                    android:textColorHint="#fff"
+                    android:inputType="number"/>
+
+            </LinearLayout>-->
+
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="0dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et4"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="Enter Date"
+                    android:password="false"
+                    android:textColor="#fff3fff3"
+                    android:textColorHint="#fff" />
+
+                <Button
+                    android:id="@+id/datebutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#ff69efff"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="setDate"
+                    android:text="Select Date" />
+
+            </LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/people"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter Approx Number of People Trapped"
+                    android:password="false"
+                    android:textColor="#fff3fff3"
+                    android:inputType="number"
+                    android:textColorHint="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Select Food Requirements"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/medicine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Select Medicines"
+                    android:textColor="#000000"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/injury"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Select Injury Happened"
+                    android:textColor="#000000"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/clothes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Select Clothes"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+
+           <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/temperature"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:gravity="center"
+
+                    android:hint="Air Temperature"
+                    android:password="false"
+                    android:textColor="#fff3fff3"
+                    android:textColorHint="#fff"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>-->
+
+           <!-- <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editoffer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:hint="Relative Humidity"
+                    android:gravity="center"
+                    android:textColor="#fff3fff3"
+                    android:textColorHint="#fff"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>-->
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/shopname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="Amount Of Rainfall"
+                    android:password="false"
+                    android:textColor="#fff3fff3"
+                    android:textColorHint="#fff" />
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/record1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="RECORD" />
+
+                <Button
+                    android:id="@+id/record2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:text="PLAY" />
+
+                <Button
+                    android:id="@+id/record3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:text="STOP" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20px"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/photobutton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff69efff"
+                    android:text="Upload Photo" />
+
+                <ImageView
+                    android:id="@+id/photoview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/offer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="#ff69efff"
+                    android:clickable="true"
+                    android:onClick="registerPost"
+                    android:text="Submit" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

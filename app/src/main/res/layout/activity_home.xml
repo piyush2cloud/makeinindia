@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/LL"
+    android:background="@drawable/back">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="RESCUE APP"
+        android:id="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:layout_weight="0.14"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/Base.DialogWindowTitle.AppCompat"
+        android:textIsSelectable="true"
+        android:textSize="50dp"
+        android:textColor="#6aff25"
+        android:textColorHighlight="#ff4bffec" />
+
+
+    <Button
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:text="SignUp As Victim"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/button1"
+        android:background="#ff69efff"
+        android:clickable="true"
+        android:textColor="#ff140d0f" />
+
+    <Button
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:text="LogIn as Victim"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/loginvictim"
+        android:background="#ff69efff"
+        android:clickable="true"
+        android:textColor="#ff140d0f"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:text="Emergeny Button"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/emergency"
+        android:background="#ff3f18"
+        android:clickable="true"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp" />
+
+
+    <!--<Button
+        android:layout_width="222dp"
+        android:layout_height="40dp"
+        android:text="Rescue Team"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:id="@+id/button2"
+        android:background="#ff69efff"
+        android:clickable="true"
+        android:textColor="#ff140d0f" />-->
+
+
+
+</LinearLayout>

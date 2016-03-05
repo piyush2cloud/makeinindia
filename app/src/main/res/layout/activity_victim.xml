@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.piyush.myapplication.Victim"
+    android:background="@color/material_blue_grey_800">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:context=".MapsActivity"
+        tools:layout="@layout/abc_action_bar_title_item" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        android:id="@+id/scrollvictim">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="Message From Rescuer ->"
+                android:shadowColor="#fff"
+                android:id="@+id/messagerescue"/>
+
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:entries="@array/operations"
+                android:visibility="visible"
+                android:spinnerMode="dialog"
+                android:popupTheme="@color/background_material_light"
+                android:layout_marginTop="10dp"
+                android:id="@+id/spinneroperation">
+
+            </Spinner>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="4dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:text="Contact Rescuer"
+                android:layout_marginTop="28dp"
+                android:background="#ff69efff"
+                android:clickable="true"
+                android:textColor="#ff140d0f"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/act"
+                android:text="Act as a Rescuer"
+                android:layout_marginTop="16dp"
+                android:background="#ff69efff"
+                android:clickable="true"
+                android:textColor="#ff140d0f"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"/>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
